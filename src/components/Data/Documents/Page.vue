@@ -693,7 +693,7 @@ export default {
             const date = dateFromTimestamp(value)
 
             if (date) {
-              document[field] += ` (${date.toUTCString()})`
+              document[field] += ` (${date.toString()})`
             }
           } else if (value && typeof value === 'object') {
             changeField(value)
